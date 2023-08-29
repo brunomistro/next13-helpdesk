@@ -3,6 +3,10 @@ import TicketsList from "./TicketList";
 import Loading from "../loading";
 import Link from "next/link";
 
+export const metadata = {
+  title : 'Dojo Helpdesk | Tickets'
+}
+
 export default function Tickets() {
   return (
     <main>
