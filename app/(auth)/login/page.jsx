@@ -1,9 +1,20 @@
-import React from 'react'
+"use client"
+
+//components
+import AuthForm from "../AuthForm";
 
 export default function Login() {
-	return (
-		<main>
-			<h2 className="text-center">Login</h2>
-		</main>
-	)
+  const handleSubmit = async (e, email, password) => {
+    e.preventDefault();
+
+    console.log("login", email, password);
+  };
+
+  return (
+    <main>
+      <h2 className="text-center">Login</h2>
+
+      <AuthForm handleSubmit={handleSubmit} />
+    </main>
+  );
 }
