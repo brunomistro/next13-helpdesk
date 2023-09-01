@@ -8,7 +8,6 @@ export default function AuthLayout({ children }) {
         <Link href="/signup">Sign Up</Link>
         <Link href="/login">Login</Link>
       </nav>
-			
       {children}
     </>
   );
